@@ -18,3 +18,10 @@
   .titolobg{
     background: linear-gradient(87deg, rgba(248,248,248,0) 15%, rgba(254,254,254,1) 51%, rgba(255,255,255,0) 85%);
   }
+  .logout{
+    text-decoration: none;
+    
+  }
+  .logout_1{
+    margin-top: 5px;
+  }
