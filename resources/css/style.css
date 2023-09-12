@@ -1,0 +1,20 @@
+.masthead {
+    height: 150vh;
+    min-height: 500px;
+    background-image: url('.././img/masthead.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .navbar{
+    position: sticky;
+    top: 0;
+  }
+  .titolo{
+    font-weight: bolder;
+
+  }
+  .titolobg{
+    background: linear-gradient(87deg, rgba(248,248,248,0) 15%, rgba(254,254,254,1) 51%, rgba(255,255,255,0) 85%);
+  }
