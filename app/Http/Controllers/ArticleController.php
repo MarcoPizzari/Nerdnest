@@ -28,7 +28,23 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required|unique:articles|min:5',
+            'subtitle' => 'required|unique:articles|min:5',
+            'body' => 'required|min:10',
+            'image' => 'image',
+            'category' => 'required',
+        ]);
+
+        Article::create([
+            'title' => $request->title,
+            'subtitle' => $request->subtitle,
+            'body' => $request->body,
+            'image' => $request->file('image')->store('public/images'), 
+            'category_id' => $request->category,
+            'user_id' => Auth::user()->id,
+        ]);
+        return redirect(route('home'))->with('message', 'Articolo creato correttamente');
     }
 
     /**
