@@ -9,7 +9,7 @@
         </div>
         <div class="card-footer text-muted d-flex justify-content-between align-items-center">
             redatto il {{$article->created_at->format('d/m/Y')}} da {{$article->user->name}}
-            <a href="#" class="btn btn-info text-white">leggi</a>
+            <a href="{{route('article.show', compact('article'))}}" class="btn btn-info text-white">leggi</a>
         </div>
     </div>
 </div>
