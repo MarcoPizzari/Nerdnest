@@ -19,10 +19,10 @@ class Article extends Model
         'category_id',
     ];
     public function user(){
-        return $this->belongTo(User::class);
+        return $this->belongsTo(User::class);
     }
     public function category(){
-        return $this->belongTo(Category::class);
+        return $this->belongsTo(Category::class);
     }
 
 }

@@ -11,5 +11,19 @@
     </div>
 @endif
 
+@if ($articles->IsEmpty())
+    <p>Non ci sono articoli in archivio</p>
+@else
+
+<div class="container">
+    <div class="row justify-content-around">
+        @foreach ($articles as $article)
+        <x-card :article="$article" />
+        @endforeach
+    </div>
+</div>
+
+
+@endif
 
 </x-layout>
