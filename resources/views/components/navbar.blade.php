@@ -9,6 +9,10 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('article.create')}}">Inserisci un articolo</a>
+        </li>
         @auth
         <li class="nav-item">
             <a class="nav-link  " aria-current="page" href="#" role="button" >benvenuto {{Auth::user()->name}}</a>

@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('subtitle');
-            $table->longtext('body');
+            $table->longText('body');
             $table->string('image');
-            $table->unsigneBigInter('user_id')->nullable();
+            $table->unsignedBigInter('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('SET NULL');
-            $table->unsigneBigInter('category_id')->nullable();
+            $table->unsignedBigInter('category_id')->nullable();
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('SET NULL');
             $table->timestamps();
         });
