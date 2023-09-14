@@ -29,6 +29,32 @@ public function careersSubmit(Request $request){
         'message' => 'required',
     ]);
 
-    dd($request->all());
+$user = Auth::user();
+$role = $request->role;
+$email = $request->email;
+$message = $request->message;
+
+mail::to('marco.pizzari94@gmail.com')->send(new CareerRequestMail(compact('role','email','message')));
+
+switch($role){
+    case 'admin':
+    $user->is_admin = NULL;
+    break;
+
+    case 'revisor':
+    $user->is_revisor = NULL;
+    break;
+
+    case 'writer':
+    $user->is_writer = NULL;
+    break;
+
+}
+
+user->update();
+return redirect(route('homepage')->with('message', 'grazie per averci contattato'));
+
 }
 }
+
+
