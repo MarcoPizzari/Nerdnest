@@ -17,10 +17,14 @@
         </li>
         @auth
         <li class="nav-item">
-            <a class="nav-link  " aria-current="page" href="#" role="button" >benvenuto {{Auth::user()->name}}</a>
+            <a class="nav-link benvenuto  " aria-current="page" href="#" role="button" >benvenuto {{Auth::user()->name}}</a>
         </li>
         <li class="logout_1">        
-            <a class="logout" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();"><button>logout</button></a>
+          <button class="ui-btn">
+            <span>
+              logout
+            </span>
+          </button>
         </li>
         <form action="{{route('logout')}}" method="POST" id="form-logout" class="d-none">
             @csrf

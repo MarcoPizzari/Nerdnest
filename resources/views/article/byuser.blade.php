@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container ">
         <div class="row justify-content-around">
             @foreach ($articles as $article)
             <x-card :article="$article" />

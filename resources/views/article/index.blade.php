@@ -1,15 +1,13 @@
 <x-layout>
 
-    <div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="container-fluid p-5 text-center ">
         <div class="row justify-content-center">
-            <h1 class="display-1">
-                Tutti gli articoli
-            </h1>
+            <h2 class="p-2  text-center text-white">Tutti gli articoli</h2>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row justify-content-around">
+    <div class="container ">
+        <div class="row container_article justify-content-around">
             @foreach ($articles as $article)
             <x-card :article="$article" />
             @endforeach
