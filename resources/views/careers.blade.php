@@ -28,11 +28,11 @@
                     </div>
                 @endif
 
-                <form class="p-5" action="" method="">
+                <form class="p-5" action="{{route('careers.submit')}}" method="POST">
                 @csrf
     
                 <div class="mb-3">
-                    <label for="role" class="form-label">            per quale ruolo ti stai candidando?</label>
+                    <label for="role" class="form-label">  per quale ruolo ti stai candidando?</label>
                     <select name="role" id="role" class="form-control">
                         <option value="">scegli qui</option>
                         <option value="admin">amministratore</option>

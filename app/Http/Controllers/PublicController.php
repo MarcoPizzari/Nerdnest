@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use App\Mail\CareerRequestMail;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class PublicController extends Controller
 {
@@ -34,7 +37,7 @@ $role = $request->role;
 $email = $request->email;
 $message = $request->message;
 
-mail::to('marco.pizzari94@gmail.com')->send(new CareerRequestMail(compact('role','email','message')));
+Mail::to('admin@theaulabpost.it')->send(new CareerRequestMail(compact('role','email','message')));
 
 switch($role){
     case 'admin':
@@ -51,8 +54,8 @@ switch($role){
 
 }
 
-user->update();
-return redirect(route('homepage')->with('message', 'grazie per averci contattato'));
+$user->update();
+return redirect(route('home'))->with('message', 'grazie per averci contattato');
 
 }
 }
