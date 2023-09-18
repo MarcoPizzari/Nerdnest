@@ -15,21 +15,22 @@
                 <h2 class="card-text">{{$article->subtitle}}</h2>    
                     <p class="small text-muted fst-italic text-capatalize ">{{$article->category->name}}</p>
                 </div>
-                <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                    <p>redatto da {{$article->user->name}} il {{$article->created_at->format('d/m/Y')}}</p>
-                </div>
-                @if(Auth::user() && Auth::user()->is_revisor)
-                <a href="{{route('revisor.acceptArticle',compact('article'))}}" class="btn btn-danger text-white my-5"> Accetta articolo</a>
-                <a href="{{route('revisor.rejectArticle',compact('article'))}}" class="btn btn-danger text-white my-5"> Rifiuta articolo</a>
-                @endif
-                <hr>
-           <p>{{$article->body}}</p>
-           <div class= "text-center">
-                <a href="{{route('article.index')}}" class= "btn btn-info text-white my-5"> torna indietro</a>
-                </div>    
             </div>
         </div>
-        
+        <div class="col-12 col-md-6">
+            <div class="card-footer text-muted d-flex justify-content-between align-items-center">
+                <p>redatto da {{$article->user->name}} il {{$article->created_at->format('d/m/Y')}}</p>
+            </div>
+            @if(Auth::user() && Auth::user()->is_revisor)
+                <a href="{{route('revisor.acceptArticle',compact('article'))}}" class="btn buttonattiva buttonarticolo1 text-white my-5"> Accetta articolo</a>
+                <a href="{{route('revisor.rejectArticle',compact('article'))}}" class="btn buttonattiva buttonarticolo2 text-white my-5"> Rifiuta articolo</a>
+            @endif
+            <hr>
+            <h4>"{{$article->body}}"</h4>
+            <div class= "text-center">
+                <a href="{{route('article.index')}}" class= "btn buttonattiva text-white text-white my-5"> torna indietro</a>
+            </div>        
+        </div>    
     </div>
 </div>
 

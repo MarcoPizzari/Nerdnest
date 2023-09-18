@@ -1,9 +1,17 @@
 <x-layout>
-    <div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="row">
+        <div class="col-12 ">
+          @if(session('message'))
+              <div class="alert alert-success text-center">
+                  {{session('message')}}
+              </div>
+          @endif
+        </div>
+      </div>
+    
+    <div class="container-fluid p-5  text-center text-white">
         <div class="row justify-content-center">
-            <h1 class="display-1">
-                Lavora con noi
-            </h1>
+            <h2 class="p-2  text-center text-white">Lavora con noi</h2>
         </div>
     </div>
 
@@ -49,7 +57,7 @@
                     <textarea type="message" name="message" class="form-control" id="message" >{{old('message')}}</textarea>
                 </div>
                 <div class="mt-2">
-                    <button class="btn btn-info text-white">Invia la candidatura</button>
+                    <button class="btn inviacanditatura text-white">Invia la candidatura</button>
                 </div>
             </form>
 

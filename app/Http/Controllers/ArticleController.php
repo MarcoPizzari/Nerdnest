@@ -51,7 +51,7 @@ class ArticleController extends Controller
             'category_id' => $request->category,
             'user_id' => Auth::user()->id,
         ]);
-        return redirect(route('home'))->with('message', 'Articolo creato correttamente');
+        return redirect(route('home'))->with('message', 'Articolo in revisione, se conforme verrà approvato nel minor tempo possibile, grazie');
     }
 
     /**

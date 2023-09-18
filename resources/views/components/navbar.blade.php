@@ -24,22 +24,22 @@
         @auth    
         
         @if(Auth::user()->is_admin)
-          <li><a class="dropdown-item" href="{{route('admin.dashboard')}}">Dashboard admin</a></li>
+          <li><a class="nav-link active" href="{{route('admin.dashboard')}}">Dashboard admin</a></li>
         @endif
         
         @if(Auth::user()->is_revisor)
-          <li><a class="dropdown-item" href="{{route('revisor.dashboard')}}">Dashboard del revisore</a></li>
+          <li><a class="nav-link active" href="{{route('revisor.dashboard')}}">Dashboard del revisore</a></li>
         @endif
         
         <li class="nav-item">
-            <a class="nav-link benvenuto  " aria-current="page" href="#" role="button" >benvenuto {{Auth::user()->name}}</a>
+            <a class="nav-link benvenuto  " aria-current="page" href="#" role="button" >Benvenuto {{Auth::user()->name}}</a>
         </li>
         
         <form action="{{route('logout')}}" method="POST" id="form-logout">
             @csrf
             <button class="ui-btn" >
             <span>
-              logout
+              Logout
             </span> 
           </button>
         </form>

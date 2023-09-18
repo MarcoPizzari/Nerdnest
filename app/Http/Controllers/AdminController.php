@@ -32,4 +32,5 @@ class AdminController extends Controller
         ]);
         return redirect(route('admin.dashboard'))->with('message', 'Hai correttamente reso redattore l\'utente scelto');
     }
+    
 }

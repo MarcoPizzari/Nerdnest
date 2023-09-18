@@ -18,9 +18,9 @@
         <td>
          
             @if(is_null($article->is_accepted))
-                <a href="{{route('article.show', compact('article'))}}" class="btn btn-info text-white">leggi l'articolo</a>    
+                <a href="{{route('article.show', compact('article'))}}" class="btn buttonattiva text-white">leggi l'articolo</a>    
             @else
-                <a href="{{route('revisor.undoArticle', compact('article'))}}" class="btn btn-info text-white">riporta in revisione</a>    
+                <a href="{{route('revisor.undoArticle', compact('article'))}}" class="btn buttonattiva text-white">riporta in revisione</a>    
             @endif
         </td>
       </tr>

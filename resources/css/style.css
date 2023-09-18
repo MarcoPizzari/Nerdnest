@@ -60,7 +60,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
       backdrop-filter: blur(9px) saturate(0.8);
       background-color: var(--colorDark);
 } */
+
   /* titolo welcome */
+  .container_titolo{
+    margin-bottom: auto;
+  }
   .titolo{
     font-weight: bolder;
 
@@ -130,7 +134,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     overflow: hidden;
     box-shadow: var(--btn-shadow);
     position: relative;
-    left: 40vw;
+    left: 42vw;
     height: 40px;
     width: 120px;
     border-radius: 30px;
@@ -259,10 +263,40 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   }
   /* benvenuto vicino al button logout */
   .benvenuto{position: relative;
-    left: 40vw;
-  color: black;
+    left: 42vw;
+    color: black;
+  }
+  .benvenuto:hover{
+    border-bottom: transparent;
   }
 
  .messaggio{
   margin: 0;
+ }
+ /* messaggio */
+ .container_message{
+  margin-bottom: 0px;
+ }
+ /* button invia canditatura */
+ .inviacanditatura{
+  background-color: var(--colorDark);
+ }
+ /* button attiva admin */
+ .buttonattiva{
+  background-color: var(--colorDark);
+ }
+ .buttonattiva:hover{
+  background-color: black;
+ }
+ .buttonarticolo1{
+  height: 100px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: green;
+ }
+ .buttonarticolo2{
+  height: 100px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: red;
  }

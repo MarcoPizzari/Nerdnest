@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-center my-5">
         <div class="row">
             <div class="col-12">
                 <div class="form-container text-center">
