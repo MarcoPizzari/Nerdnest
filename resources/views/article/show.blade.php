@@ -18,7 +18,11 @@
                 <div class="card-footer text-muted d-flex justify-content-between align-items-center">
                     <p>redatto da {{$article->user->name}} il {{$article->created_at->format('d/m/Y')}}</p>
                 </div>
-            <hr>
+                @if(Auth::user() && Auth::user()->is_revisor)
+                <a href="{{route('revisor.acceptArticle',compact('article'))}}" class="btn btn-danger text-white my-5"> Accetta articolo</a>
+                <a href="{{route('revisor.rejectArticle',compact('article'))}}" class="btn btn-danger text-white my-5"> Rifiuta articolo</a>
+                @endif
+                <hr>
            <p>{{$article->body}}</p>
            <div class= "text-center">
                 <a href="{{route('article.index')}}" class= "btn btn-info text-white my-5"> torna indietro</a>

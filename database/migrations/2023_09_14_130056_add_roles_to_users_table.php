@@ -22,7 +22,26 @@ return new class extends Migration
             'email' => 'admin@theaulabpost.it',
             'password' => bcrypt('12345678'),
             'is_admin' => true,
+            
+        
         ]);
+        $user = User::create([
+            'name' => 'Revisor',
+            'email' => 'revisor@theaulabpost.it',
+            'password' => bcrypt('12345678'),
+            'is_revisor' => true,
+            
+        ]);
+        $user = User::create([
+            'name' => 'Writer',
+            'email' => 'writer@theaulabpost.it',
+            'password' => bcrypt('12345678'),
+            'is_writer' => true,
+            
+        ]);
+
+
+
     }
 
     /**

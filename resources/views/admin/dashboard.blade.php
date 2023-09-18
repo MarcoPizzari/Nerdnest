@@ -33,7 +33,6 @@
         <div class="col-12">
             <h2>richieste per il ruolo writer</h2>
             <x-requests-table :roleRequest="$writerRequest" role="redattore"/>
-$writerRequest" role="redattore"/>
         </div>
     </div>
 </div>

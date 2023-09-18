@@ -22,24 +22,28 @@
           <a class="nav-link text-dark" href="{{route('article.create')}}">Inserisci un articolo</a>
         </li>
         @auth    
+        
         @if(Auth::user()->is_admin)
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="{{route('admin.dashboard')}}">Dashboard admin</a>
-          </li>
+          <li><a class="dropdown-item" href="{{route('admin.dashboard')}}">Dashboard admin</a></li>
         @endif
+        
+        @if(Auth::user()->is_revisor)
+          <li><a class="dropdown-item" href="{{route('revisor.dashboard')}}">Dashboard del revisore</a></li>
+        @endif
+        
         <li class="nav-item">
             <a class="nav-link benvenuto  " aria-current="page" href="#" role="button" >benvenuto {{Auth::user()->name}}</a>
         </li>
-       <li> 
-          <form action="{{route('logout')}}" method="POST" id="form-logout">
-              @csrf
-              <button class="ui-btn">
-                <span>
-                  logout
-                </span>
-              </button>
-          </form>
-        </li>
+        
+        <form action="{{route('logout')}}" method="POST" id="form-logout">
+            @csrf
+            <button class="ui-btn" >
+            <span>
+              logout
+            </span> 
+          </button>
+        </form>
+        
         @endauth
         @guest
             <li class="nav-item">
