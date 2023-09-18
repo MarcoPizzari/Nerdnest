@@ -16,11 +16,14 @@
           <a class="nav-link active" aria-current="page" href="{{route('article.index')}}">Tutti gli articoli</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('careers')}}">lavora con noi</a>
+          <a class="nav-link active" aria-current="page" href="{{route('careers')}}">Lavora con noi</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="{{route('article.create')}}">Inserisci un articolo</a>
         </li>
+        @if(Auth::user()->is_admin)
+          <li><a class="dropdown-item" href="{{route('admin.dashboard')}}">Dashboard admin</a></li>
+        @endif
         @auth
         <li class="nav-item">
             <a class="nav-link benvenuto  " aria-current="page" href="#" role="button" >benvenuto {{Auth::user()->name}}</a>
