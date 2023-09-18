@@ -1,3 +1,14 @@
+
+  <div class="row">
+    <div class="col-12 ">
+      @if(session('message'))
+          <div class="alert alert-success text-center">
+              {{session('message')}}
+          </div>
+      @endif
+    </div>
+  </div>
+
 <header class="masthead">
     <div class="container h-100">
       <div class="row h-100 align-items-center">

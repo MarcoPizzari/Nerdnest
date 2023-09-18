@@ -32,29 +32,3 @@
 </x-layout>
 
 
-<form class="p-5" action="" method="">
-    @csrf
-    <div class="mb-3">
-        <label for="role" class="form-label">
-            per quale ruolo ti stai candidando?
-        </label>
-        <select name="role" id="role" class="form-control">
-            <option value="">scegli qui</option>
-            <option value="admin">amministratore</option>
-            <option value="revisor">revisore</option>
-            <option value="writer">redattore</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="email" class="form-label">email</label>
-        <input type="email" name="email" class="form-control" id="email" value="{{old('email')??Auth::user()->email}}">
-    </div>
-    <div class="mb-3">
-        <label for="message" class="form-label">parlaci di te</label>
-        <textarea type="message" name="message" class="form-control" id="message" >{{old('message')}}</textarea>
-
-    </div>
-    
-
-
-</form>
