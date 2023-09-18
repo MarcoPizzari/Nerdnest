@@ -14,10 +14,9 @@
         <td>{{$user->name}}</td>
         <td>{{$user->email}}</td>
         <td>
-            <button class="btn btn-info text-white"> attiva {{$role}}</button>
+          <button class="btn btn-info text-white"> attiva {{$role}}</button>
         </td>
       </tr>
-      @endforeach
       <td>
           @switch($role)
             @case('amministratore')
@@ -29,5 +28,6 @@
               @break
           @endswitch
       </td>
+      @endforeach
     </tbody>
   </table>

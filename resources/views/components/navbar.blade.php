@@ -21,23 +21,23 @@
         <li class="nav-item">
           <a class="nav-link text-dark" href="{{route('article.create')}}">Inserisci un articolo</a>
         </li>
+        @auth    
+        
         @if(Auth::user()->is_admin)
           <li><a class="dropdown-item" href="{{route('admin.dashboard')}}">Dashboard admin</a></li>
         @endif
-        @auth
         <li class="nav-item">
             <a class="nav-link benvenuto  " aria-current="page" href="#" role="button" >benvenuto {{Auth::user()->name}}</a>
         </li>
-        <li class="logout_1">        
-          <button class="ui-btn">
+        <button class="ui-btn">
             <span>
               logout
             </span>
           </button>
-        </li>
         <form action="{{route('logout')}}" method="POST" id="form-logout" class="d-none">
             @csrf
         </form>
+        
         @endauth
         @guest
             <li class="nav-item">

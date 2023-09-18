@@ -17,7 +17,7 @@ public function home(){
 }
 
 public function __construct(){
-    $this->middleware('auth')->except('homepage');
+    $this->middleware('auth')->except('home');
 }
 
 
