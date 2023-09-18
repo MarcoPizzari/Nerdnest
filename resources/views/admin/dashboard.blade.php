@@ -16,8 +16,7 @@
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-12">
-            <h2>richieste per il ruolo amministratore</h2>
-            <x-requests-table :roleRequest="$adminRequest" role="amministratore"/>
+            <h2>richieste per il ruolo amministratore<x-requests-table :roleRequest="$adminRequest" role="amministratore"/>
         </div>
     </div>
 </div>
@@ -34,6 +33,7 @@
         <div class="col-12">
             <h2>richieste per il ruolo writer</h2>
             <x-requests-table :roleRequest="$writerRequest" role="redattore"/>
+$writerRequest" role="redattore"/>
         </div>
     </div>
 </div>

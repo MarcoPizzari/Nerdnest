@@ -1,18 +1,18 @@
 <x-layout>
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="container d-flex justify-content-center">
+        <div class="row">
             <div class="col-12">
-                <div class="form-container">
-                    <p class="title">Accedi</p>
+                <div class="form-container text-center">
+                    <p class="title text-white">Accedi</p>
                     <form class="form" method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="input-group">
-                            <label class="form-label">Email</label>
-                            <input type="email"  name="email">
+                            <label class="form-label text-white">Email</label>
+                            <input type="email"  name="email" class="text-white">
                         </div>
                         <div class="input-group">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password" placeholder="">
+                            <label for="password " class="text-white">Password</label>
+                            <input type="password" name="password" id="password" class="text-white">
                         </div>
                         <button class="sign my-4" type="submit">Sign in</button>
                     </form>
