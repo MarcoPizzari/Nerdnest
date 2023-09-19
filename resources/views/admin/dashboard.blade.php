@@ -3,7 +3,7 @@
 <div class="container-fluid p-5 text-center">
     <div class="row justify-content-center">
         <h1 class="col-12">
-            bentornato, amministratore
+            Bentornato, amministratore
         </h1>
     </div>
 </div>
@@ -16,23 +16,24 @@
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-12">
-            <h2>richieste per il ruolo amministratore<x-requests-table :roleRequest="$adminRequest" role="amministratore"/>
+            <h2>Richieste per il ruolo amministratore</h2>
+            <h3><x-requests-table :roleRequest="$adminRequest" role="amministratore"/></h3>
         </div>
     </div>
 </div>
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-12">
-            <h2>richieste per il ruolo revisore</h2>
-            <x-requests-table :roleRequest="$revisorRequest" role="revisore"/>
+            <h2>Richieste per il ruolo revisore</h2>
+            <h3><x-requests-table :roleRequest="$revisorRequest" role="revisore"/></h3>
         </div>
     </div>
 </div>
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-12">
-            <h2>richieste per il ruolo writer</h2>
-            <x-requests-table :roleRequest="$writerRequest" role="redattore"/>
+            <h2>Richieste per il ruolo writer</h2>
+            <h3><x-requests-table :roleRequest="$writerRequest" role="redattore"/></h3>
         </div>
     </div>
 </div>
