@@ -95,6 +95,13 @@ class ArticleController extends Controller
         $articles = $category->articles->sortBydesc('created_at')->filter(function($article) {
             return $article->is_accepted == true;
         });
-        return view('article.byCategory', compact('category', 'articles'));
+        return view('article.byUser', compact('user', 'articles'));
     }
+    public function byUser(User $user){
+         $articles = $user->articles->sortBydesc('created_at')->filter(function($article) {
+            return $article->is_accepted == true;
+        });
+         return view('article.byUser', compact('user', 'articles'));
+     }
+
 }
