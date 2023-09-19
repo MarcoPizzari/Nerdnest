@@ -48,6 +48,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
   .nav-link{
       border-bottom: transparent;
+
   }
 
   .nav-link:hover{
@@ -134,7 +135,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     overflow: hidden;
     box-shadow: var(--btn-shadow);
     position: relative;
-    left: 42vw;
+    left: 32vw;
     height: 40px;
     width: 120px;
     border-radius: 30px;
@@ -263,7 +264,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   }
   /* benvenuto vicino al button logout */
   .benvenuto{position: relative;
-    left: 42vw;
+    left: 32vw;
     color: black;
   }
   .benvenuto:hover{

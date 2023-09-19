@@ -21,6 +21,11 @@
         <li class="nav-item">
           <a class="nav-link text-dark" href="{{route('article.create')}}">Inserisci un articolo</a>
         </li>
+
+        <form class="d-flex" method="GET" action="{{route('article.search')}}">
+              <input class="form-control me-2" type="search" name="query" placeholder="Cosa stai cercando?" aria-label="Search">
+              <button class="btn btn-outline" type="submit">Cerca</button>
+        </form>
         @auth    
         
         @if(Auth::user()->is_admin)
@@ -49,6 +54,7 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{route('register')}}">Register</a>
             </li>
+            
 
             <li class="nav-item">
             <a class="nav-link" href="{{route('login')}}">Login</a>
@@ -57,5 +63,6 @@
       </ul>
     </div>
   </div>
+  
 </nav>
 
