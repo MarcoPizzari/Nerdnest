@@ -14,11 +14,11 @@
                             <label for="password " class="text-white">Password</label>
                             <input type="password" name="password" id="password" class="text-white">
                         </div>
-                        <button class="sign my-4" type="submit">Sign in</button>
+                        <button class="sign my-4" type="submit">Accedi</button>
                     </form>
                     <div class="social-message">
                         <div class="line"></div>
-                        <p class="message">Login with social accounts</p>
+                        <p class="message">Accedi con i social</p>
                         <div class="line"></div>
                     </div>
                     <div class="social-icons">
@@ -38,8 +38,8 @@
                             </svg>
                         </button>
                     </div>
-                    <p class="signup">Don't have an account?
-                        <a rel="noopener noreferrer" href="{{ route('register')}}" class="">Sign up</a>
+                    <p class="signup">Non hai un account?
+                        <a rel="noopener noreferrer" href="{{ route('register')}}" class="text-white">Registrati</a>
                     </p>
                 </div>
             </div>

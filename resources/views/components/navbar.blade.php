@@ -47,11 +47,11 @@
         @endauth
         @guest
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route('register')}}">register</a>
+                <a class="nav-link active" aria-current="page" href="{{route('register')}}">Register</a>
             </li>
 
             <li class="nav-item">
-            <a class="nav-link" href="{{route('login')}}">login</a>
+            <a class="nav-link" href="{{route('login')}}">Login</a>
             </li>
         @endguest
       </ul>
