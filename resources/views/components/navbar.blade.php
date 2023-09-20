@@ -35,20 +35,19 @@
         @if(Auth::user()->is_revisor)
           <li><a class="nav-link active" href="{{route('revisor.dashboard')}}">Dashboard del revisore</a></li>
         @endif
-        
-        <li class="nav-item">
-            <a class="nav-link benvenuto  " aria-current="page" href="#" role="button" >Benvenuto {{Auth::user()->name}}</a>
-        </li>
-        
-        <form action="{{route('logout')}}" method="POST" id="form-logout">
-            @csrf
-            <button class="ui-btn" >
-            <span>
-              Logout
-            </span> 
-          </button>
-        </form>
-        
+        <div class="robalogout">
+          <li class="nav-item">
+              <a class="nav-link benvenuto  " aria-current="page" href="#" role="button" >Benvenuto {{Auth::user()->name}}</a>
+          </li>
+          <form action="{{route('logout')}}" method="POST" id="form-logout">
+              @csrf
+              <button class="ui-btn" >
+              <span>
+                Logout
+              </span> 
+            </button>
+          </form>
+        </div>
         @endauth
         @guest
             <li class="nav-item">

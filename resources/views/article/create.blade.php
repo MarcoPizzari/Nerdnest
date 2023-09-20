@@ -45,6 +45,11 @@
                        @endforeach
                         </select>
                     </div>
+                    <div class="mb3">
+                        <label for="tags" class="form-label">tags:</label>
+                        <input id="tags" class="form-control" value="{{old('tags')}}" name="tags">
+                        <span class="small fst-italic">Dividi ogni tag con la virgola</span>
+                    </div>
                 </div>
             </div>
             <div class="mb-3">
@@ -57,3 +62,6 @@
     </div>
 </div>
 </x-layout>
+
+
+
