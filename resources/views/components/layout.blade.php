@@ -11,10 +11,12 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="body_bg">
+    
     <x-navbar />
+    
     <div >
      {{ $slot }}
     </div>
-    
+   
 </body>
 </html>

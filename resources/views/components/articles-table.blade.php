@@ -1,7 +1,7 @@
 <table class="table table-striped table-hover border">
     <thead class="table-dark">
       <tr>
-        <th scope="col">#</th>
+        <th scope="col" class="logowhite"></th>
         <th scope="col">titolo</th>
         <th scope="col">sottotitolo</th>
         <th scope="col">redattore</th>

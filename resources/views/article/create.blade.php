@@ -1,6 +1,6 @@
 <x-layout>
 
-<div class="container">
+<div class="container text-white">
     <h2 class="my-4">Inserisci il nuovo articolo</h2>
     <div class="row">
             @if ($errors->any())

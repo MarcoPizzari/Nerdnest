@@ -13,9 +13,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 /* background generale */
 .body_bg{
-  background-color: var(--colorMiddle);
+  background-color:black;
 }
-
 /* masthead */
 .masthead {
     height: 150vh;
@@ -34,6 +33,14 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     background-size: cover;
     background-position: center;
   }
+  .logowhite {
+    background-image: url('.././img/logowhite.png');
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+  }
+
 
   .navbar{
     position: sticky;
@@ -287,20 +294,23 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
  }
  /* button attiva admin */
  .buttonattiva{
+  font-size: 14px;
+ 
+
   background-color: var(--colorDark);
  }
  .buttonattiva:hover{
-  background-color: black;
+  background-color: var(--colorMiddle);
  }
  .buttonarticolo1{
-  height: 100px;
-  width: 200px;
+  height: 50px;
+  width: 100px;
   border-radius: 100px;
   background-color: green;
  }
  .buttonarticolo2{
-  height: 100px;
-  width: 200px;
+  height: 50px;
+  width: 100px;
   border-radius: 100px;
   background-color: red;
  }
@@ -309,4 +319,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   position: absolute;
    right: 0;
    top: 65px;
+ }
+ .tastinodettagli{
+  position: fixed;
+  right: 30px;
+  bottom: 0;
  }
