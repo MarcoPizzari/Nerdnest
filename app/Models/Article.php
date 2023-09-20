@@ -40,3 +40,10 @@ class Article extends Model
         ];
     }
 }
+// in caso di modifica mandare da terminale questi comandi
+// php artisan scout:flush "App\Models\Article"
+
+// Solo dopo, potremo rilanciare:
+
+// php artisan scout:import "App\Models\Article" 
+

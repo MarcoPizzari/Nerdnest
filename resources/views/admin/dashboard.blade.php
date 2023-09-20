@@ -47,4 +47,13 @@
         </div>
     </div>
 </div>
+<hr>
+<div class="container my-5">
+    <div class="row justifu-content-center">
+        <div class="col-12">
+            <h2>le categorie della piattaforma</h2> 
+            <h3><x-metainfo-table :metaInfos="$categories" metaType="categorie"/></h3>
+        </div>
+    </div>
+</div>
 </x-layout>

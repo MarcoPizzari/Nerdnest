@@ -8,7 +8,15 @@
         <div class="row">
             <div class="col-6">
                 <div>
-                    <a href="{{route('article.byCategory', ['category'=> $article->category->id])}}" class="small text-muted fst-italic text-capitalize ">{{$article->category->name}}</a>
+                    @if ($article->category)
+                        
+                    
+                        <a href="{{route('article.byCategory', ['category'=> $article->category->id])}}" class="small text-muted fst-italic text-capitalize ">{{$article->category->name}}</a>
+                    @else
+                        <p class="small text_muted fst-italic text-capitalize">
+                        non categorizzato
+                        </p>
+                    @endif
                </div>
                 <div>
                     <a href="{{route('article.byUser', ['user'=> $article->user->id])}}" class="small text-muted fst-italic text-capitalize ">{{$article->user->name}}</a>
