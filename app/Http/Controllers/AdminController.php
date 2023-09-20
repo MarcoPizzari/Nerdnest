@@ -44,6 +44,16 @@ class AdminController extends Controller
             'name' => strtolower($request->name),
         ]);
 
-        return redirect(route('admin.dashboard'))->with('message', 'hai correttamente aggiornato il tag');
+        return redirect(route('admin.dashboard'))->with('message', 'Hai correttamente aggiornato il tag');
+    }
+
+    public function deleteTag(Tag $tag){
+        foreach($tag->articles as $article){
+            $article->tags()->detach($tag);
+        }
+
+        $tag->delete();
+
+        return redirect(route('admin.dashboard'))->with('message', 'Hai correttamente eliminato il tag');
     }
 }
