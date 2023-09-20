@@ -33,4 +33,16 @@ class AdminController extends Controller
         return redirect(route('admin.dashboard'))->with('message', 'Hai correttamente reso redattore l\'utente scelto');
     }
     
+    public function editTag(Request $requests, Tag $tag){
+
+        $requests->validate([
+            'name' => 'required|unique:tags',
+        ]);
+
+        $tag->update([
+            'name' => $strolower($request->name),
+        ]);
+
+        return redirect(route('admin.dashboard'))->with('message', 'hai correttamente aggiornato il tag');
+    }
 }

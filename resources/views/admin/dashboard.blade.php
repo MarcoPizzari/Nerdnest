@@ -38,5 +38,13 @@
     </div>
 </div>
 
-
+<hr>
+<div class="container my-5">
+    <div class="row justifu-content-center">
+        <div class="col-12">
+            <h2>I tags della piattaforma</h2> 
+            <h3><x-metainfo-table :metaInfos="$tags" metaType="tags"/></h3>
+        </div>
+    </div>
+</div>
 </x-layout>
