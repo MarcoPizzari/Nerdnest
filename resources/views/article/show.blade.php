@@ -1,7 +1,7 @@
 <x-layout>
     <div class="container-fluid p-5 text-center ">
         <div class="row justify-content-center">
-            <h2 class="p-2  text-center text-white">{{$article->title}}</h2>
+            <h1 class="p-2  text-center text-white"> {{$article->title}}</h1>
         </div>
     </div> 
 
