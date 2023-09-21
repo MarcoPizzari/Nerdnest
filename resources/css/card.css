@@ -3,7 +3,7 @@
   width: 350px;
   height: 220px;
   background-color: #f2f2f2;
-  border-radius: 10px;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,5 +54,5 @@
   line-height: 1.4;
 }
 .leggi{
-  
+
 }

@@ -29,6 +29,9 @@
         @if(Auth::user()->is_revisor)
           <li><a class="nav-link active" href="{{route('revisor.dashboard')}}">Dashboard del revisore</a></li>
         @endif
+        @if(Auth::user()->is_writer)
+          <li><a class="nav-link active" href="{{route('writer.dashboard')}}">Dashboard del redattore</a></li>
+        @endif
         <div class="robalogout">
           <li class="nav-item">
               <a class="nav-link benvenuto  " aria-current="page" href="#" role="button" >Benvenuto {{Auth::user()->name}}</a>
