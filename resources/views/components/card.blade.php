@@ -2,8 +2,9 @@
 <div class="card1 m-3">
   <img src="{{Storage::url($article->image)}}" class=" my-3 card-img-top figure-img img-fluid rounded immagini" alt="">
   <div class="card__content">
-    <p class="card__title">{{$article->title}}</p>
-    <p class="card-text text-truncate ">{{$article->subtitle}}</p>
+   <h3 class="card__title"> {{$article->title}}</h3>
+    <h5 class="card-text text-truncate ">{{$article->subtitle}}</h5>
+    <hr>
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -35,7 +36,7 @@
     
     <div class="card-footer text-muted d-flex justify-content-between align-items-center">
         redatto il {{$article->created_at->format('d/m/Y')}} da {{$article->user->name}}
-        <a href="{{route('article.show', compact('article'))}}" class="btn ">leggi</a>
+        <a href="{{route('article.show', compact('article'))}}" class="btn leggi">leggi</a>
     </div>
   </div>
 </div>
