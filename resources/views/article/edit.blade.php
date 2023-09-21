@@ -19,7 +19,7 @@
                 @endif
             
         
-                <form action="{{ route('article.edit') }}"
+                <form action="{{ route('article.edit', compact('article')) }}"
                     method="POST" enctype="multipart/form-data">
                     @csrf
                     
@@ -30,7 +30,7 @@
                             </div>
                             <div class="mb-3 mx-5">
                                 <label class="form-label" for="sottotitolo">Sottotitolo</label>
-                                <input type="text" class="form-control" name="title" value="{{$article->subtitle}}">
+                                <input type="text" class="form-control" name="subtitle" value="{{$article->subtitle}}">
                                 
                             </div>
                             <div class="mb-3 mx-5">
@@ -42,7 +42,7 @@
                                 <label class="form-label" for="category">category</label>
                                 <select name="category" id="category" class="form-control text-capitalize">
                                     @foreach ($categories as $category)
-                                        <option value="$category->id" @if ($article->category && $category->id == $article->category->id) selected @endif> {{$category->name}}</option>
+                                        <option value="{{$category->id}}" @if(($article->category && $category->id) == $article->category->id) selected @endif>{{$category->name}}</option>
                                     @endforeach
                                 </select>
                                 <div class="mb-3">
@@ -56,11 +56,11 @@
                                     <span class="small fst-italic">Dividi ogni tag con la virgola</span>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Inserisci un articolo</button>
-                                <a class="btn btn-outline-info" href="{{route('home')}}">torna alla home</a>
+                                <a class="btn btn-outline-info" href="{{route('home')}}">Torna alla home</a>
                             </div>
-                        </div>
+            
                     </form>     
             </div>
         </div>
     </div>
-
+</x-layout>
