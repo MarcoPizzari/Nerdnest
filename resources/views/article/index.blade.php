@@ -1,8 +1,9 @@
 <x-layout>
+    
 
     <div class="container-fluid p-5 text-center ">
         <div class="row justify-content-center">
-            <h2 class="p-2  text-center text-white">Tutti gli articoli</h2>
+            <h2 class="p-2  text-center text-white ultimiarticoli">Tutti gli articoli</h2>
         </div>
     </div>
 
@@ -13,5 +14,6 @@
             @endforeach
         </div>
     </div>
+    
 </x-layout>
 

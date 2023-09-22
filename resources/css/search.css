@@ -1,13 +1,19 @@
 :root{
   --colorMiddle:rgb(166, 185, 200);
   --colorSoft::rgb(227, 234, 244);
-  --colorDark:rgb(77, 83, 89);
+  --colorDark:rgb(7, 43, 20);
 }
-
+.input-container1 {
+  position: fixed;
+  right: 0;
+  top: 15px;
+  z-index: 8;
+  align-items: center;
+}
 .input-container {
   position: fixed;
   right: 0;
-  z-index: 1;
+  z-index: 8;
   align-items: center;
 }
 
@@ -33,7 +39,7 @@
 
 .inputsearch:focus,.input:not(:placeholder-shown) {
   background-color: #fff;
-  border: 1px solid rgb(91, 107, 255);
+  border: 1px solid var(--colorDark);
   width: 290px;
   cursor: none;
   padding: 18px 16px 18px 45px;
@@ -47,8 +53,8 @@
   background-color: #fff;
   border-radius: 99px;
   z-index: -1;
-  fill: rgb(91, 107, 255);
-  border: 1px solid rgb(91, 107, 255);
+  fill: var(--colorDark);
+  border: 1px solid var(--colorSoft);
 }
 
 .inputsearch:focus + .iconsearch,.inputsearch:not(:placeholder-shown) + .iconsearch {
@@ -58,8 +64,15 @@
 }
 .btnsearch{
   border-radius: 99px;
-  fill: rgb(91, 107, 255);
-  border: 1px solid rgb(91, 107, 255);
-  background-color: var(--colorDark);
+ 
+  border: 2px solid white;
+  background-color: black;
   color: white;
+ 
+}
+
+.btnsearch:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
 }

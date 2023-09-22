@@ -1,20 +1,21 @@
 <x-layout>
 <x-masthead />
 
-<div class="container-fluid p-5 text-center ">
-    <div class="row justify-content-center">
-        <h2 class="p-2  text-center text-white">Ultimi articoli</h2>
-    </div>
-</div>
-
-
-@if ($articles->IsEmpty())
-    <p>Non ci sono articoli in archivio</p>
-@else
 
 
 <main>
-
+    <div class="container-fluid p-5 text-center  ">
+        <div class="row justify-content-center">
+            <h2 class="p-2  text-center text-white ultimiarticoli">Ultimi articoli</h2>
+        </div>
+    </div>
+    
+    
+    @if ($articles->IsEmpty())
+        <p>Non ci sono articoli in archivio</p>
+    @else
+    
+    
     <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
     <div class="overlay"></div>
   

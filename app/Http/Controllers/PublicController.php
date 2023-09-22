@@ -12,7 +12,7 @@ class PublicController extends Controller
 {
     
 public function home(){
-    $articles = Article::where('is_accepted', true)->orderby('created_at', 'desc')->take(3)->get();
+    $articles = Article::where('is_accepted', true)->orderby('created_at', 'desc')->take(2)->get();
     return view('welcome', compact('articles'));
 }
 
