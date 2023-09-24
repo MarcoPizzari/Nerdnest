@@ -56,7 +56,7 @@
                     <label class="form-label">Corpo del testo</label>
                     <textarea class="form-control" name="body" cols="30" rows="8"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Inserisci un articolo</button>
+                <button type="submit" class="btn btn-primary btnall">Inserisci un articolo</button>
             </form>
         </div>
     </div>

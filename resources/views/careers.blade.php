@@ -57,7 +57,7 @@
                     <textarea type="message" name="message" class="form-control" id="message" >{{old('message')}}</textarea>
                 </div>
                 <div class="mt-2 text-white">
-                    <button class="btn inviacanditatura text-white">Invia la candidatura</button>
+                    <button class="btn inviacanditatura text-white  btnall">Invia la candidatura</button>
                 </div>
             </form>
 

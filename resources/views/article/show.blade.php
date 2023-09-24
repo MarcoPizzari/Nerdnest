@@ -36,8 +36,8 @@
                 <p class="text-white">redatto da {{$article->user->name}} il {{$article->created_at->format('d/m/Y')}}</p>
             </div>
             @if(Auth::user() && Auth::user()->is_revisor)
-                <a href="{{route('revisor.acceptArticle',compact('article'))}}" class="btn buttonattiva buttonarticolo1 text-white my-5"> Accetta articolo</a>
-                <a href="{{route('revisor.rejectArticle',compact('article'))}}" class="btn buttonattiva buttonarticolo2 text-white my-5"> Rifiuta articolo</a>
+                <a href="{{route('revisor.acceptArticle',compact('article'))}}" class="btn buttonattiva border1  text-white my-5"> Accetta articolo</a>
+                <a href="{{route('revisor.rejectArticle',compact('article'))}}" class="btn buttonattiva  border3 text-white my-5"> Rifiuta articolo</a>
             @endif
             <hr>
             <h4>"{{$article->body}}"</h4>

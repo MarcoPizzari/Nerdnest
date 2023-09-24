@@ -248,28 +248,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
  .inviacanditatura{
   background-color: var(--colorDark);
  }
- /* button attiva admin */
- .buttonattiva{
-  font-size: 14px;
  
-
-  background-color: var(--colorDark);
- }
- .buttonattiva:hover{
-  background-color: var(--colorMiddle);
- }
- .buttonarticolo1{
-  height: 50px;
-  width: 100px;
-  border-radius: 100px;
-  background-color: green;
- }
- .buttonarticolo2{
-  height: 50px;
-  width: 100px;
-  border-radius: 100px;
-  background-color: red;
- }
  /* barra search */
  .search{
   position: absolute;

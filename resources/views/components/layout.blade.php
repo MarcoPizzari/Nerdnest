@@ -13,7 +13,6 @@
 <body class="  body_bg">
     
     <x-navbar />
-    
     <div >
      {{ $slot }}
     </div>

@@ -35,9 +35,11 @@
       color: var(--colorDark);
       border-bottom: 2px solid var(--colorSoft);
       border-bottom: solid black;
+      border-left: 2px solid var(--colorSoft);
+      border-left: solid black;
   }
-/* 
+
   .navbar-blur{
       backdrop-filter: blur(9px) saturate(0.8);
       background-color: var(--colorDark);
-} */
+}

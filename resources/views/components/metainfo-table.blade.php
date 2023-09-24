@@ -20,14 +20,14 @@
             @csrf
             @method('put')
             <input type="text" name= "name" placeholder="Nuovo nome tag" class="form-control w-50 d-inline">
-            <button type="sumbit" class="btn "> Aggiorna</button>
+            <button type="sumbit" class="btn buttonattiva"> Aggiorna</button>
             </form>
           </td>
           <td>
             <form action="{{route('admin.deleteTag', ['tag' => $metaInfo])}}" method="POST">
             @csrf
             @method('delete')
-            <button type="sumbit" class="btn "> Elimina</button>
+            <button type="sumbit" class="btn buttonattiva"> Elimina</button>
             </form>
           </td>
         @else
@@ -36,14 +36,14 @@
               @csrf
               @method('put')
               <input type="text" name= "name" placeholder="Nuovo nome categoria" class="form-control w-50 d-inline">
-              <button type="sumbit" class="btn "> Aggiorna</button>
+              <button type="sumbit" class="btn buttonattiva "> Aggiorna</button>
               </form>
             </td>
             <td>
               <form action="{{route('admin.deleteCategory', ['category' => $metaInfo])}}" method="POST">
                 @csrf
                 @method('delete')
-                <button type="submit" class="btn "> Elimina</button>
+                <button type="submit" class="btn buttonattiva"> Elimina</button>
                 </form>
             </td>
         @endif
