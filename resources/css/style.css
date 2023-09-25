@@ -124,4 +124,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 .footer-link{
   border-bottom: none !important;
 }
+.tornaindietro{
+  z-index: 9;
+}
 

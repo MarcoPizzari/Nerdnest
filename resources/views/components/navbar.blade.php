@@ -62,7 +62,7 @@
   </div>
 </nav>
 
-
+@auth
  <form method="GET" action="{{route('article.search')}}" class="formsearch">
     <div class="searchbarcontainer active" id="searchbarcontainer">
       <i class="fa-solid fa-magnifying-glass magnify" id="magnify"></i>
@@ -74,6 +74,7 @@
       </button>
     </div>
  </form>
+ @endauth 
   {{-- <div class="containersearch " >
     <form class="d-flex bg-info" method="GET" action="{{route('article.search')}}">
       <div class="input-container m-3">

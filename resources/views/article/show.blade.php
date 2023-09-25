@@ -6,7 +6,7 @@
     </div> 
 
 
-<div class="container text-white">
+<div class="container text-white my-3">
     <div class="row justify-content-center">
         <div class="col-12 col-md-6">
             <div class="card">
@@ -42,7 +42,7 @@
             <hr>
             <h4>"{{$article->body}}"</h4>
             <div class= "text-center tastinodettagli">
-                <a href="{{route('article.index')}}" class= "btn buttonattiva text-white text-white my-5"> torna indietro</a>
+                <a href="{{route('article.index')}}" class= "btn buttonattiva  text-white my-5 tornaindietro"> torna indietro</a>
             </div>        
         </div>   
     </div>
