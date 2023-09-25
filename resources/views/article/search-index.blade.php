@@ -6,7 +6,7 @@
             </h1>
         </div>
     </div>
-
+    
     <div class="container my-5">
         <div class="row container_article justify-content-around">
             @foreach ($articles as $article)

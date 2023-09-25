@@ -19,10 +19,10 @@
                 @endif
             
         
-                <form action="{{ route('article.edit', compact('article')) }}"
+                <form action="{{ route('article.update', compact('article')) }}"
                     method="POST" enctype="multipart/form-data">
                     @csrf
-                    
+                        @method('PUT')
                             <div class="mb-3 mx-5">
                                 <label class="form-label" for="titolo">Titolo</label>
                                 <input type="text" class="form-control" name="title" value="{{$article->title}}">
@@ -53,10 +53,10 @@
                                 <div class="mb3">
                                     <label for="tags" class="form-label">tags:</label>
                                     <input id="tags" class="form-control" name="tags" value="{{$article->tags->implode('name',', ')}}">
-                                    <span class="small fst-italic">Dividi ogni tag con la virgola</span>
+                                    <span class="small fst-italic ">Dividi ogni tag con la virgola</span>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Inserisci un articolo</button>
-                                <a class="btn btn-outline-info" href="{{route('home')}}">Torna alla home</a>
+                                <button type="submit" class="btn buttonattiva m-3">Inserisci un articolo</button>
+                                <a class="btn  buttonattiva" href="{{route('home')}}">Torna alla home</a>
                             </div>
             
                     </form>     

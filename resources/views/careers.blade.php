@@ -19,11 +19,14 @@
         <div class="row justify-content-center align-items-center border rounded p-2 shadow">
             <div class="col-12 col-md-6 text-white">
                 <h2>Lavora come amministratore</h2>
-                <p>Cosa farai: Lorem ipsum</p>
+                <br>
+                <br>
                 <h2>Lavora come revisore</h2>
-                <p>Cosa farai: Lorem ipsum</p>
+                <br>
+                <br>
                 <h2>Lavora come redattore</h2>
-                <p>Cosa farai: Lorem ipsum</p>
+                <br>
+                <br>
             </div>
             <div class="col-12 col-md-6 text-white">
                 @if ($errors->any())
@@ -57,7 +60,7 @@
                     <textarea type="message" name="message" class="form-control" id="message" >{{old('message')}}</textarea>
                 </div>
                 <div class="mt-2 text-white">
-                    <button class="btn inviacanditatura text-white  btnall">Invia la candidatura</button>
+                    <button class="btn inviacanditatura text-white  buttonattiva">Invia la candidatura</button>
                 </div>
             </form>
 
