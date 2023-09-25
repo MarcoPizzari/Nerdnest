@@ -1,5 +1,5 @@
 .logonav {
-    background-image: url('.././img/logo.png');
+    background-image: url('.././img/logowhite.png');
     width: 50px;
     height: 50px;
     background-size: cover;
@@ -18,7 +18,8 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color:black;
+    background-color:black !important;
+    color: white !important;
   }
   .navbar-custom{
     width: 100%;
@@ -28,13 +29,14 @@
 
   .nav-link{
       border-bottom: transparent;
-
+      color: white !important;
   }
 
   .nav-link:hover{
       color: var(--colorDark);
       border-bottom: 2px solid var(--colorSoft);
-      border-bottom: solid black;
+      border-bottom: solid rgb(255, 255, 255);
+      color: white !important;
       /* transform: translateY(-3px); */
 
   }
@@ -43,7 +45,4 @@
       backdrop-filter: blur(9px) saturate(0.8);
       background-color: var(--colorDark);
 } */
-/* footer */
-.footer{
-  background-color: var();
-}
+

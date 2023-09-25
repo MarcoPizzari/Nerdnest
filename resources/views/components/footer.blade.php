@@ -2,23 +2,26 @@
    
     <div class="container">
         <div class="row d-flex align-items-center">
-            <div class="col-4">
+            <div class="col-6">
                 <img class="logo" src="/logowhite.png" alt="">
             </div>
            
-            <div class="col-4">
+            <div class="col-6">
                 <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                 
-                  </div>
-            </div>
-            <div class="col-4">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                 
-                  </div>
+                    
+                        <ul class="navbar-nav  mb-1 ">
+                          <li class="nav-item">
+                            <a class="footer-link active mx-2 text-white text-decoration-none" aria-current="page" href="{{route('home')}}"><i class="fa-solid fa-house"></i> Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="footer-link active mx-2 text-white text-decoration-none" aria-current="page" href="{{route('article.index')}}"><i class="fa-regular fa-newspaper"></i> Tutti gli articoli</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="footer-link active mx-2 text-white text-decoration-none" aria-current="page" href="{{route('careers')}}"> <i class="fa-solid fa-handshake"></i> Lavora con noi</a>
+                          </li>
+                        </ul>
+                        
+                </div>
             </div>
         </div>
     </div>
