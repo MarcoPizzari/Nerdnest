@@ -10,27 +10,27 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
+          <a class="nav-link active mx-2" aria-current="page" href="{{route('home')}}"><i class="fa-solid fa-house"></i> Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('article.index')}}">Tutti gli articoli</a>
+          <a class="nav-link active mx-2" aria-current="page" href="{{route('article.index')}}"><i class="fa-regular fa-newspaper"></i> Tutti gli articoli</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('careers')}}">Lavora con noi</a>
+          <a class="nav-link active mx-2" aria-current="page" href="{{route('careers')}}"> <i class="fa-solid fa-handshake"></i> Lavora con noi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="{{route('article.create')}}">Inserisci un articolo</a>
+          <a class="nav-link text-dark mx-2" href="{{route('article.create')}}"><i class="fa-solid fa-plus"></i> Inserisci un articolo</a>
         </li>
         @auth 
           @if(Auth::user()->is_admin)
-            <li><a class="nav-link active" href="{{route('admin.dashboard')}}">Dashboard admin</a></li>
+            <li><a class="nav-link active  fw-bolder" href="{{route('admin.dashboard')}}">Dashboard admin</a></li>
           @endif
           
           @if(Auth::user()->is_revisor)
-            <li><a class="nav-link active" href="{{route('revisor.dashboard')}}">Dashboard del revisore</a></li>
+            <li><a class="nav-link active  fw-bolder" href="{{route('revisor.dashboard')}}">Dashboard del revisore</a></li>
           @endif
           @if(Auth::user()->is_writer)
-            <li><a class="nav-link active" href="{{route('writer.dashboard')}}">Dashboard del redattore</a></li>
+            <li><a class="nav-link active  fw-bolder" href="{{route('writer.dashboard')}}">Dashboard del redattore</a></li>
           @endif
           <div class="robalogout">
             <li class="nav-item">
@@ -49,10 +49,10 @@
         @guest
             <div class="loginregister">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route('register')}}">Register</a>
+                <a class="nav-link active mx-2" aria-current="page" href="{{route('register')}}">Register</a>
               </li>
               <li class="nav-item">
-              <a class="nav-link text-dark"  href="{{route('login')}}">Login</a>
+              <a class="nav-link text-dark mx-2"  href="{{route('login')}}"> <i class="fa-solid fa-user"></i> Login</a>
               </li>
             </div>
             

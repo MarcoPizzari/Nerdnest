@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   
   .container_article{
    margin-top: 30px;
-   height: 100px;
+   
   }
 
   .text-truncate{
@@ -100,9 +100,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   right: 30px;
   bottom: 0;
  }
- .ultimiarticoli{
-  z-index: 8;
- }
+ 
  /* login & register */
  .loginregister{
   position: absolute;
@@ -110,4 +108,16 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   display: inline-flex
  }
 
- /* hrhome */
+ .footer{
+  /* background: linear-gradient(87deg, rgba(248,248,248,0) 15%, rgba(254,254,254,1) 51%, rgba(255,255,255,0) 85%); */
+  background-color: black;
+  color: white;
+ }
+ /* logo */
+ .logo{
+  width: 70px;
+  height: 70px;
+}
+.ultimiarticoli{
+  z-index: 10;
+}

@@ -1,3 +1,6 @@
+<div class="table-responsive">
+
+
 <table class="table table-striped table-hover border">
     <thead class="table-dark">
       <tr>
@@ -26,8 +29,10 @@
               @break
           @endswitch
       </td>
+
       </tr>
      
       @endforeach
     </tbody>
   </table>
+</div>

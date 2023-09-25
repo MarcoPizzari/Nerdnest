@@ -3,11 +3,13 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Mail\Mailables\Attachment;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
 class CareerRequestMail extends Mailable
 {
@@ -36,6 +38,8 @@ class CareerRequestMail extends Mailable
     
     public function attachments()
     {
-        return [];
+        return [
+             Attachment::fromPath(storage_path('app/public/asset/logo.png')), 
+        ];
     }
 }

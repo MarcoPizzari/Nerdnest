@@ -1,4 +1,7 @@
-<table class="table table-striped table-hover border">
+<div class="table-responsive">
+
+
+  <table class="table table-striped table-hover border">
     <thead class="table-dark">
       <tr>
         <th scope="col" class="logowhite"></th>
@@ -27,3 +30,4 @@
       @endforeach
     </tbody>
   </table>
+</div>  
