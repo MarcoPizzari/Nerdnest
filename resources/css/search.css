@@ -15,13 +15,13 @@
 
 }
 .btnsearch{
-  width: 80px;
+  
   position: absolute;
   right: 20px;
   transition: all 0.1s;
   /* transition-delay: 0.5s; */
   background-color: var(--colorDark);
-  
+  width: 70px !important;
 }
 .magnify{
   width: 25px;
@@ -31,6 +31,7 @@
   color: var(--colorDark);
   cursor: pointer;
 }
+
 .inputsearchbar{
   background-color: transparent;
   border: none;
@@ -38,7 +39,7 @@
   outline: none;
   color: var(--colorDark);
   transition: width 0.1s;
-
+  
 }
 .active.searchbarcontainer{
   width: 45px;
