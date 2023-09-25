@@ -61,7 +61,7 @@
     </div>
   </div>
 </nav>
-@auth
+
 
  <form method="GET" action="{{route('article.search')}}" class="formsearch">
     <div class="searchbarcontainer active" id="searchbarcontainer">
@@ -83,7 +83,7 @@
       </div>
     </form>
   </div> --}}
-@endauth
+
 
 
 
