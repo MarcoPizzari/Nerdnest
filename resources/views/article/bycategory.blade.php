@@ -7,6 +7,8 @@
             </h1>
         </div>
     </div>
+<br>
+<br>
 
     <div class="container ">
         <div class="row justify-content-around">
@@ -15,4 +17,7 @@
             @endforeach
         </div>
     </div>
+<br>
+<br>
+<br>
 </x-layout>

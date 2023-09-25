@@ -99,6 +99,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   position: fixed;
   right: 30px;
   bottom: 0;
+  z-index: 10 !important;
  }
  
  /* login & register */
@@ -109,10 +110,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
  }
 
  .footer{
-  /* background: linear-gradient(87deg, rgba(248,248,248,0) 15%, rgba(254,254,254,1) 51%, rgba(255,255,255,0) 85%); */
   background-color: black;
-  color: white !important;
+
+  width: 100%;
  }
+
  /* logo */
  .logo{
   width: 70px;
@@ -121,10 +123,5 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 .ultimiarticoli{
   z-index: 10;
 }
-.footer-link{
-  border-bottom: none !important;
-}
-.tornaindietro{
-  z-index: 9;
-}
+
 

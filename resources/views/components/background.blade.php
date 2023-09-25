@@ -5,7 +5,7 @@
 
     <!-- The HTML5 video element that will create the background video on the main -->
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="./../video/main.mp4" type="video/mp4">
+        <source src="./../video/main.mp4" type="video/mp4">
     </video>
 
 

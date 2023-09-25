@@ -42,7 +42,7 @@
             <hr>
             <h4>"{{$article->body}}"</h4>
             <div class= "text-center tastinodettagli">
-                <a href="{{route('article.index')}}" class= "btn buttonattiva  text-white my-5 tornaindietro"> torna indietro</a>
+                <a href="{{route('article.index')}}" class= "btn buttonattiva  text-white my-5 tornaindietro"> <i class="fa-solid fa-backward"></i>  Torna indietro</a>
             </div>        
         </div>   
     </div>

@@ -6,8 +6,8 @@
         </div>
     </div>
     <div class="container text-white">
-          <div class="row">
-            <div class="col-12 col-md-8">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-7">
                 @if ($errors->any())
                     <div class = "alert alert-danger">
                         <ul>
